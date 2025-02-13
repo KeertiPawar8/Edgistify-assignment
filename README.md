@@ -19,16 +19,24 @@ Backend: https://edgistify-backend-zn1f.onrender.com/
 
 ## Installation & Getting started
 ### E-commerce repository
-
+```bash
+git clone https://github.com/KeertiPawar8/Edgistify-assignment.git
+cd Edgistify-assignment
+```
 ### Backend
-1. Navigate to the backend folder - `cd backend`
-2. Install the required packages - `npm i`
-3. Start the backend server - `npm run server`
+```bash
+cd backend
+npm install
+npm run server
+```
 
 ### Frontend
-1. Navigate to the frontend folder - `cd frontend`
-2. Install the required packages - `yarn`
-3. Start the development server - `yarn run dev`
+```bash
+cd frontend
+yarn
+yarn run dev
+```
+
 
 
 
