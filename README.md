@@ -38,7 +38,13 @@ yarn run dev
 ```
 
 # PostMan Collection
-`A Postman collection is provided in the codebase that can be used to test the APIs effectively.`
+A Postman collection named Edgistify-Assignment.postman_collection.json is available in the codebase. This collection can be used to test the APIs.
+
+Steps to Use:<br>
+- Download the file from the codebase.<br>
+- Open the Postman application.<br>
+- Go to File > Import, then select the downloaded Edgistify-Assignment.postman_collection.json file.<br>
+- This will import the collection into Postman, allowing you to test all the APIs easily.<br>
 
 ## Technology Stack
 
