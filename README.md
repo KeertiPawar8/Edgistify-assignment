@@ -36,13 +36,16 @@ cd frontend
 yarn
 yarn run dev
 ```
+
+# PostMan Collection
+`A Postman collection is provided in the codebase that can be used to test the APIs effectively.`
+
 ## Technology Stack
 
 - Node.js
 - Express.js
 - MongoDB
 - React.js
-
 
 
 
