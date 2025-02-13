@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "7d848c9b-912e-4eae-b9a5-3da1e76d5d23",
+		"name": "Edgistify-Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24854267"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\":\"test\",\r\n    \"email\":\"test@gmail.com\",\r\n    \"password\":\"test@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://edgistify-backend-zn1f.onrender.com/user/register",
+					"protocol": "https",
+					"host": [
+						"edgistify-backend-zn1f",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"test@gmail.com\",\r\n    \"password\":\"test@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://edgistify-backend-zn1f.onrender.com/user/login",
+					"protocol": "https",
+					"host": [
+						"edgistify-backend-zn1f",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://edgistify-backend-zn1f.onrender.com/product/getProducts",
+					"protocol": "https",
+					"host": [
+						"edgistify-backend-zn1f",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"product",
+						"getProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add To Cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FkNzBlMGMyMTZmMWU2MjY3MjBiYzgiLCJpYXQiOjE3Mzk0MTk5NDd9.7xL87OZoOCj7AGDj17txOlQvMYaNIkX3lyV1CtCKHTw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"productID\":\"P002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://edgistify-backend-zn1f.onrender.com/product/addToCart",
+					"protocol": "https",
+					"host": [
+						"edgistify-backend-zn1f",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"product",
+						"addToCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cart Products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FkNzBlMGMyMTZmMWU2MjY3MjBiYzgiLCJpYXQiOjE3Mzk0MTk5NDd9.7xL87OZoOCj7AGDj17txOlQvMYaNIkX3lyV1CtCKHTw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://edgistify-backend-zn1f.onrender.com/product/getCartProducts",
+					"protocol": "https",
+					"host": [
+						"edgistify-backend-zn1f",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"product",
+						"getCartProducts"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Increase Product Quantity",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FkNzBlMGMyMTZmMWU2MjY3MjBiYzgiLCJpYXQiOjE3Mzk0MTk5NDd9.7xL87OZoOCj7AGDj17txOlQvMYaNIkX3lyV1CtCKHTw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productID\":\"P001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://edgistify-backend-zn1f.onrender.com/product/increase-quantity",
+					"protocol": "https",
+					"host": [
+						"edgistify-backend-zn1f",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"product",
+						"increase-quantity"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Decrese Product Quantity",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FkNzBlMGMyMTZmMWU2MjY3MjBiYzgiLCJpYXQiOjE3Mzk0MTk5NDd9.7xL87OZoOCj7AGDj17txOlQvMYaNIkX3lyV1CtCKHTw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productID\":\"P001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://edgistify-backend-zn1f.onrender.com/product/decrease-quantity",
+					"protocol": "https",
+					"host": [
+						"edgistify-backend-zn1f",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"product",
+						"decrease-quantity"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Product From Cart",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FkNzBlMGMyMTZmMWU2MjY3MjBiYzgiLCJpYXQiOjE3Mzk0MTk5NDd9.7xL87OZoOCj7AGDj17txOlQvMYaNIkX3lyV1CtCKHTw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productID\":\"P002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://edgistify-backend-zn1f.onrender.com/product/removeFromCart",
+					"protocol": "https",
+					"host": [
+						"edgistify-backend-zn1f",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"product",
+						"removeFromCart"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Place Order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FkNzBlMGMyMTZmMWU2MjY3MjBiYzgiLCJpYXQiOjE3Mzk0MTk5NDd9.7xL87OZoOCj7AGDj17txOlQvMYaNIkX3lyV1CtCKHTw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"shippingAddress\":\"Delhi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://edgistify-backend-zn1f.onrender.com/product/place-order",
+					"protocol": "https",
+					"host": [
+						"edgistify-backend-zn1f",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"product",
+						"place-order"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
