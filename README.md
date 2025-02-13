@@ -36,7 +36,12 @@ cd frontend
 yarn
 yarn run dev
 ```
+## Technology Stack
 
+- Node.js
+- Express.js
+- MongoDB
+- React.js
 
 
 
