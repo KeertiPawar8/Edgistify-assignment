@@ -37,7 +37,7 @@ yarn
 yarn run dev
 ```
 
-# PostMan Collection
+# Postman Collection
 A Postman collection named Edgistify-Assignment.postman_collection.json is available in the codebase. This collection can be used to test the APIs.
 
 Steps to Use:<br>
